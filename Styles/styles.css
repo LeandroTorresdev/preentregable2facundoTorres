@@ -1,220 +1,301 @@
-body{
-    overflow-x: hidden;
-}
-.navbar{
-    background-color: #F299B1;
-    border-bottom:#732F41 solid 5px;
-}
-.nav-link:hover{
-    position: relative;
-    top:2px;
-    left: 2px;
-    color:white;
-}
-h1{
-    position: relative;
-    right: 15vw;
-}
-.carousel-item{
-    max-height: 500px;
-    margin-bottom: 3vh;
-}
-a{
-    text-decoration: none;
-    color:#dc3545;
-}
-.footer-container{
-    background-color: #F299B1;
-}
-.iconos-footer{
-    margin-top: 3vh;
-}
-.row{
-    --bs-gutter-x:0 !important;
-}
-iframe{
-    max-height: 300px;
-    max-width: 100%;
-}
-.barra-index{
-    background-color: #732F41;
-    width:100%;
-    height: 3px;
-}
-.nosotros-title{
-    display: flex;
-    justify-content: center;
-    font-family: "Bebas Neue";
-    font-size: 5vw;
-    letter-spacing: 5px;
-}
-.mimadas-tw{
-    max-width:400px;
-    max-height: 350px;
-    position: relative;
-    left: 3vw;
-}
-.p-float{
-    float: right;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-right: 150px;
-}
-#equipo{
-    align-items: center;
-    font-family: "Bebas Neue";
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    font-size: 5vw;
-}
-.mimadas-card{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 2vw;
-}
-.card-btn{
-    background-color: #F26389;
-    color:whitesmoke
-}
-.card{
-    box-shadow: 3px 4px 10px 0 black;
-    margin:5px 3px 0 0;
-}
-.card-title{
-    font-family: "Bebas neue", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Estilos de barra de navegacion */
+.header {
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.header-sticky{
-    position:sticky;
-    top:0;
-}
-#masajes{
-    max-height:240.47px !important;
-}
-h4{
-    font-family: "bebas neue";
-    font-size: 4vw;
-}
-section ul li{
-    font-family: "Anton";
-    letter-spacing: 2px;
-}
-.dropdown-servicios{
-    background-color:#F299B1;
-}
-div ul li a{
-    color: black;
-    font-family: "bebas neue";
-    margin-left: 5px;
-    letter-spacing: 1px;
-}
-.arrow-up{
-    position:fixed;
-    bottom: 80px;
-    left: 90%;
-    color: #732F41;
-}
-.calu-h4{
-    margin-top: 8vw;
-}
-.calu-h4 ul li{
-    list-style: none;
+.navbar-brand img {
+  object-fit: cover;
 }
 
-.spinner-productos{
-    width: 5vw;
-    color: #2800d8;
-    border: rgb(109, 0, 211) solid;
-}
-.form-contacto{
-    margin-top: 18vh;
-}
-.label-contacto{
-    font-family: "bebas neue";
-    font-size: 1.5vw;
-}
-.rosa-mimadas{
-    background-image: url(../Multimedia/rosamimadas.jpg);
-    background-repeat: repeat-x;
+.navbar {
+  background-color: #F299B1;
+  width: 100%;
 }
 
-#main-contacto{
-    background-color: #f3dbe1;
-}
-.send-btn{
-    background-color:#F26389;
-    font-size: 1.5vw;
-    letter-spacing: 1px;
-    border-radius: 4px;
-    font-family: "teko";
-    margin-bottom: 2vw;
-}
-.send-btn:hover{
-    position: relative;
-    left: 2px;
-    top: 2px;
-    color: white;
+.nav-link:hover {
+  position: relative;
+  top: 2px;
+  left: 2px;
+  color: white;
 }
 
-
-
-
-
-
-@media only screen and (max-width:500px) {
-    .nosotros-title,#equipo{
-        font-size: 10vw;
-    }
-    .mimadas-card{
-        flex-direction: column;
-    }
-    .card{
-        margin-left:17vw ;
-        margin-bottom: 2vh;
-    }
-    .p-float{
-        padding: 0;
-    }
-    .card-servicios{
-        margin: 0;
-    }
-    .calu-h4{
-        font-size: 9vw;
-        margin-left: 1vw;
-    }
-    h4{
-        font-size:6vw;
-    }
-    section ul li{
-        font-size: 4vw;
-    }
-    div ul li a{
-        font-size: 3vw;
-    }
-    h5{
-        font-size: 4vw;
-    }
-    .label-contacto{
-        font-size: 4vw;
-    }
-    .send-btn{
-        font-size: 4vw;
-    }
-    .form-contacto{
-        margin:0;
-    }
-    .calu-rrss{
-        padding-left: 15vw;
-    }
-    .calu-rrss ul{
-        padding-left: 15vw;
-    }
+.nav-link {
+  font-family: "Bebas neue";
+  margin: 10px 0px;
+  font-size: 1.5vw;
 }
-@media only screen and (min-width:800px){
-.p-float{
-    padding-left: 30px;
-    position:relative;
-    top:5vh;
+
+.navegation {
+  flex-direction: row !important;
 }
+
+#nav-margin {
+  justify-content: center !important;
+  padding: 0;
 }
+
+@media (max-width: 1000px) {
+  .link-nav {
+    font-size: 3vw;
+    margin-right: 1.5vw;
+  }
+}
+/* carrusel */
+.carousel-item img {
+  max-height: 400px;
+  margin-bottom: 3vh;
+  object-fit: cover;
+}
+
+/* contenido index  */
+p {
+  font-family: "roboto";
+}
+
+#carouselExample {
+  max-height: 500px !important;
+}
+
+.container-footer {
+  background-color: #F299B1;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "logo direccion ." "instagram whatsapp facebook";
+}
+
+.iconos-footer {
+  color: white;
+  text-decoration: none;
+  font-family: "bebas neue";
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.whatsapp {
+  grid-area: whatsapp;
+}
+
+.instagram {
+  grid-area: instagram;
+}
+
+.facebook {
+  grid-area: facebook;
+}
+
+.logo-footer {
+  width: 14vw;
+  height: 16vh;
+  grid-area: logo;
+}
+
+.direccion-footer {
+  grid-area: direccion;
+  margin-top: 3vw;
+  font-family: "bebas neue";
+}
+
+@media (max-width: 1000px) {
+  .logo-footer {
+    width: 25vw;
+    height: 10vh;
+  }
+}
+.nosotros-title {
+  font-family: "Bebas neue";
+  font-size: 6.5vw;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.nosotros-content {
+  font-family: "roboto";
+  font-size: 1.75vw;
+  margin-top: 10px;
+}
+
+.card-title {
+  font-family: "Bebas neue";
+}
+
+.card-btn {
+  background-color: #F299B1;
+  font-family: "Bebas neue";
+  color: white;
+  font-size: 1.5vw;
+}
+
+@media (max-width: 1000px) {
+  .nosotros-content {
+    font-size: 3.5vw;
+  }
+  .card-btn {
+    font-size: 3vw;
+  }
+  .nosotros-title {
+    font-size: 10vw;
+  }
+  .ratio {
+    --bs-aspect-ratio: 90%;
+  }
+  .mimadas-teamwork {
+    margin-bottom: 10px;
+  }
+}
+/* Estilos de la galeria de productos*/
+.btn-compra {
+  background-color: #F299B1;
+  width: 16vw;
+  font-size: 2vw;
+  font-family: "bebas neue";
+  color: white;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 0;
+  border-radius: 3px;
+  transition: all 1000ms;
+}
+
+.btn-compra:hover {
+  color: rgb(109, 8, 42);
+  background-color: white;
+  transform: scale(1.1);
+}
+
+/* galeria de productos */
+.galeria-productos {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  justify-items: center;
+  padding: 10px;
+}
+.galeria-productos :last-child {
+  margin-bottom: 30px;
+}
+
+.galeria-items {
+  width: 200px;
+  transition: all 1000ms;
+  overflow: hidden;
+  padding: 10px;
+}
+.galeria-items img {
+  width: 200px;
+  transition: all 1000ms;
+}
+.galeria-items .precio {
+  font-family: "Bebas neue";
+  font-weight: 900;
+  font-size: large;
+}
+.galeria-items .info-producto {
+  font-family: "Bebas neue";
+  font-weight: 900;
+  font-size: large;
+}
+
+.galeria-items:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.2);
+}
+.galeria-items:hover img {
+  transform: scale(1.1);
+  object-fit: cover;
+}
+
+.btn-cart {
+  width: 100%;
+  color: rgb(117, 0, 55);
+  background-color: rgb(255, 157, 217);
+  font-family: "Bebas neue";
+  font-size: 1.3vw;
+}
+
+@media (max-width: 1000px) {
+  .galeria-productos {
+    grid-template-columns: 1fr;
+  }
+  .btn-cart {
+    font-size: 3.5vw;
+  }
+  .btn-compra {
+    font-size: 3vw;
+    width: 20vw;
+  }
+}
+#main-contacto {
+  background-image: url(../Multimedia/rosamimadas.jpg);
+  background-repeat: repeat-x;
+  height: max-content;
+  width: 100%;
+  background-color: rgb(255, 220, 225);
+}
+
+.mimadas-rrss {
+  font-family: "Bebas Neue" "sans serif";
+}
+.mimadas-rrss h4 {
+  margin-top: 20px;
+  font-size: 4vw;
+}
+.mimadas-rrss ul {
+  list-style: none;
+}
+.mimadas-rrss ul li {
+  margin: 20px;
+}
+.mimadas-rrss a {
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+  font-family: "Bebas Neue";
+  font-size: 3vw;
+}
+
+.form-contacto {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+.form-contacto .label-contacto, .form-contacto button {
+  font-family: "Bebas Neue";
+  font-size: 1.5vw;
+}
+.form-contacto input, .form-contacto textarea {
+  background-color: transparent;
+  border: none;
+}
+.form-contacto button {
+  width: 50%;
+  background-color: #F299B1;
+  border-radius: 10px;
+  border: solid rgba(242, 153, 177, 0.6117647059);
+}
+
+@media (max-width: 1000px) {
+  #main-contacto {
+    height: auto;
+  }
+  .form-contacto {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .form-contacto .label-contacto, .form-contacto button {
+    font-size: 3vw;
+  }
+}
+.row {
+  margin-right: 0 !important;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto";
+}
+
+#carouselExample {
+  overflow-y: hidden;
+}
+
+/*# sourceMappingURL=styles.css.map */
