@@ -237,6 +237,7 @@ p {
 
 .mimadas-rrss {
   font-family: "Bebas Neue" "sans serif";
+  margin-bottom: 60px;
 }
 .mimadas-rrss h4 {
   margin-top: 20px;
@@ -277,6 +278,9 @@ p {
 @media (max-width: 1000px) {
   #main-contacto {
     height: auto;
+  }
+  .mimadas-rrss{
+    margin-bottom: 0;
   }
   .form-contacto {
     margin-top: 20px;
