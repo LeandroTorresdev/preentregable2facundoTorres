@@ -38,21 +38,26 @@
 
 @media (max-width: 1000px) {
   .link-nav {
-    font-size: 3.5vw;
+    font-size: 3vw;
     margin-right: 1.5vw;
   }
 }
 /* carrusel */
-.carousel-item {
-  max-height: 500px;
+.carousel-item img {
+  max-height: 400px;
   margin-bottom: 3vh;
+  object-fit: cover;
 }
 
 /* contenido index  */
 p {
   font-family: "roboto";
 }
-/* Footer */
+
+#carouselExample {
+  max-height: 500px !important;
+}
+
 .container-footer {
   background-color: #F299B1;
   display: grid;
@@ -95,8 +100,8 @@ p {
 
 @media (max-width: 1000px) {
   .logo-footer {
-    width: 13vw;
-    height: 9vh;
+    width: 25vw;
+    height: 10vh;
   }
 }
 .nosotros-title {
@@ -221,6 +226,69 @@ p {
     width: 20vw;
   }
 }
+#main-contacto {
+  background-image: url(../Multimedia/rosamimadas.jpg);
+  background-repeat: repeat-x;
+  height: max-content;
+  width: 100%;
+  background-color: rgb(255, 220, 225);
+}
+
+.mimadas-rrss {
+  font-family: "Bebas Neue" "sans serif";
+}
+.mimadas-rrss h4 {
+  margin-top: 20px;
+  font-size: 4vw;
+}
+.mimadas-rrss ul {
+  list-style: none;
+}
+.mimadas-rrss ul li {
+  margin: 20px;
+}
+.mimadas-rrss a {
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+  font-family: "Bebas Neue";
+  font-size: 3vw;
+}
+
+.form-contacto {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+.form-contacto .label-contacto, .form-contacto button {
+  font-family: "Bebas Neue";
+  font-size: 1.5vw;
+}
+.form-contacto input, .form-contacto textarea {
+  background-color: transparent;
+  border: none;
+}
+.form-contacto button {
+  width: 50%;
+  background-color: #F299B1;
+  border-radius: 10px;
+  border: solid rgba(242, 153, 177, 0.6117647059);
+}
+
+@media (max-width: 1000px) {
+  #main-contacto {
+    height: auto;
+  }
+  .form-contacto {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .form-contacto .label-contacto, .form-contacto button {
+    font-size: 3vw;
+  }
+}
+.row {
+  margin-right: 0 !important;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Roboto";
