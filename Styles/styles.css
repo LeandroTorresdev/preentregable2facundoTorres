@@ -226,6 +226,313 @@ p {
     width: 20vw;
   }
 }
+ /*Contacto*/
+#main-contacto {
+  background-image: url(../Multimedia/rosamimadas.jpg);
+  background-repeat: repeat-x;
+  height: max-content;
+  width: 100%;
+  background-color: rgb(255, 220, 225);
+}
+
+.mimadas-rrss {
+  font-family: "Bebas Neue" "sans serif";
+  margin-bottom: 60px;
+}
+.mimadas-rrss h4 {
+  margin-top: 20px;
+  font-size: 4vw;
+}
+.mimadas-rrss ul {
+  list-style: none;
+}
+.mimadas-rrss ul li {
+  margin: 20px;
+}
+.mimadas-rrss a {
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+  font-family: "Bebas Neue";
+  font-size: 3vw;
+}
+
+.form-contacto {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+.form-contacto .label-contacto, .form-contacto button {
+  font-family: "Bebas Neue";
+  font-size: 1.5vw;
+}
+.form-contacto input, .form-contacto textarea {
+  background-color: transparent;
+  border: none;
+}
+.form-contacto button {
+  width: 50%;
+  background-color: #F299B1;
+  border-radius: 10px;
+  border: solid rgba(242, 153, 177, 0.6117647059);
+}
+
+@media (max-width: 1000px) {
+  #main-contacto {
+    height: auto;
+  }
+  .mimadas-rrss{
+    margin-bottom: 0;
+  }
+  .form-contacto {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .form-contacto .label-contacto, .form-contacto button {
+    font-size: 3vw;
+  }
+}
+.row {
+  margin-right: 0 !important;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto";
+}
+
+#carouselExample {
+  overflow-y: hidden;
+}
+
+/*# sourceMappingURL=styles.css.map */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Estilos de barra de navegacion */
+.header {
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.navbar-brand img {
+  object-fit: cover;
+}
+
+.navbar {
+  background-color: #F299B1;
+  width: 100%;
+}
+
+.nav-link:hover {
+  position: relative;
+  top: 2px;
+  left: 2px;
+  color: white;
+}
+
+.nav-link {
+  font-family: "Bebas neue";
+  margin: 10px 0px;
+  font-size: 1.5vw;
+}
+
+.navegation {
+  flex-direction: row !important;
+}
+
+#nav-margin {
+  justify-content: center !important;
+  padding: 0;
+}
+
+@media (max-width: 1000px) {
+  .link-nav {
+    font-size: 3vw;
+    margin-right: 1.5vw;
+  }
+}
+/* carrusel */
+.carousel-item img {
+  max-height: 400px;
+  margin-bottom: 3vh;
+  object-fit: cover;
+}
+
+/* contenido index  */
+p {
+  font-family: "roboto";
+}
+
+#carouselExample {
+  max-height: 500px !important;
+}
+
+.container-footer {
+  background-color: #F299B1;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "logo direccion ." "instagram whatsapp facebook";
+}
+
+.iconos-footer {
+  color: white;
+  text-decoration: none;
+  font-family: "bebas neue";
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.whatsapp {
+  grid-area: whatsapp;
+}
+
+.instagram {
+  grid-area: instagram;
+}
+
+.facebook {
+  grid-area: facebook;
+}
+
+.logo-footer {
+  width: 14vw;
+  height: 16vh;
+  grid-area: logo;
+}
+
+.direccion-footer {
+  grid-area: direccion;
+  margin-top: 3vw;
+  font-family: "bebas neue";
+}
+
+@media (max-width: 1000px) {
+  .logo-footer {
+    width: 25vw;
+    height: 10vh;
+  }
+}
+.nosotros-title {
+  font-family: "Bebas neue";
+  font-size: 6.5vw;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.nosotros-content {
+  font-family: "roboto";
+  font-size: 1.75vw;
+  margin-top: 10px;
+}
+
+.card-title {
+  font-family: "Bebas neue";
+}
+
+.card-btn {
+  background-color: #F299B1;
+  font-family: "Bebas neue";
+  color: white;
+  font-size: 1.5vw;
+}
+
+@media (max-width: 1000px) {
+  .nosotros-content {
+    font-size: 3.5vw;
+  }
+  .card-btn {
+    font-size: 3vw;
+  }
+  .nosotros-title {
+    font-size: 10vw;
+  }
+  .ratio {
+    --bs-aspect-ratio: 90%;
+  }
+  .mimadas-teamwork {
+    margin-bottom: 10px;
+  }
+}
+/* Estilos de la galeria de productos*/
+.btn-compra {
+  background-color: #F299B1;
+  width: 16vw;
+  font-size: 2vw;
+  font-family: "bebas neue";
+  color: white;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 0;
+  border-radius: 3px;
+  transition: all 1000ms;
+}
+
+.btn-compra:hover {
+  color: rgb(109, 8, 42);
+  background-color: white;
+  transform: scale(1.1);
+}
+
+/* galeria de productos */
+.galeria-productos {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  justify-items: center;
+  padding: 10px;
+}
+.galeria-productos :last-child {
+  margin-bottom: 30px;
+}
+
+.galeria-items {
+  width: 200px;
+  transition: all 1000ms;
+  overflow: hidden;
+  padding: 10px;
+}
+.galeria-items img {
+  width: 200px;
+  transition: all 1000ms;
+}
+.galeria-items .precio {
+  font-family: "Bebas neue";
+  font-weight: 900;
+  font-size: large;
+}
+.galeria-items .info-producto {
+  font-family: "Bebas neue";
+  font-weight: 900;
+  font-size: large;
+}
+
+.galeria-items:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.2);
+}
+.galeria-items:hover img {
+  transform: scale(1.1);
+  object-fit: cover;
+}
+
+.btn-cart {
+  width: 100%;
+  color: rgb(117, 0, 55);
+  background-color: rgb(255, 157, 217);
+  font-family: "Bebas neue";
+  font-size: 1.3vw;
+}
+
+@media (max-width: 1000px) {
+  .galeria-productos {
+    grid-template-columns: 1fr;
+  }
+  .btn-cart {
+    font-size: 3.5vw;
+  }
+  .btn-compra {
+    font-size: 3vw;
+    width: 20vw;
+  }
+}
 #main-contacto {
   background-image: url(../Multimedia/rosamimadas.jpg);
   background-repeat: repeat-x;
