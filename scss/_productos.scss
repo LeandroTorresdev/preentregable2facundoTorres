@@ -1,0 +1,77 @@
+/* Estilos de la galeria de productos*/
+$rosa-mimadas:#F299B1;
+.btn-compra{
+    background-color: #F299B1;
+    width: 16vw;
+    font-size:2vw ;
+    font-family: "bebas neue";
+    color: white;
+    padding: 5px;
+    margin-bottom:10px;
+    border: 0;
+    border-radius: 3px;
+    transition: all 1000ms;
+}
+.btn-compra:hover{
+    color: rgb(109, 8, 42);
+    background-color: white;
+    transform: scale(1.1);
+}
+/* galeria de productos */
+.galeria-productos{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    justify-items: center;
+    padding: 10px;
+    :last-child{
+        margin-bottom: 30px;
+    }
+}
+.galeria-items{
+    width:200px;
+    transition: all 1000ms;
+    overflow: hidden;
+    padding: 10px;
+    img{
+        width: 200px;
+        transition: all 1000ms;
+    }
+    .precio{
+        font-family: "Bebas neue";
+        font-weight: 900;
+        font-size: large;
+    }
+    .info-producto{
+        font-family: "Bebas neue";
+        font-weight: 900;
+        font-size: large;
+    }  
+}
+.galeria-items:hover{
+    
+    box-shadow:5px 5px 10px rgb(0, 0, 0, 0.2), -5px -5px 10px rgb(0, 0, 0, 0.2);
+    img{ 
+        transform: scale(1.1);
+        object-fit: cover;
+    }
+}
+.btn-cart{
+    width: 100%;
+    color:rgb(117, 0, 55);
+    background-color:rgb(255, 157, 217);
+    font-family: "Bebas neue";
+    font-size: 1.3vw;
+
+}
+@media (max-width:1000px){
+    .galeria-productos{
+        grid-template-columns: 1fr;
+    }
+    .btn-cart{
+        font-size: 3.5vw;
+    }
+    .btn-compra{
+        font-size: 3vw;
+        width: 20vw;
+    }
+}

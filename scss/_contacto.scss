@@ -1,0 +1,57 @@
+#main-contacto{
+    background-image: url(../Multimedia/rosamimadas.jpg);
+    background-repeat: repeat-x;
+    height:max-content;
+    width: 100%;
+    background-color: rgb(255, 220, 225);
+}
+.mimadas-rrss{
+    font-family: "Bebas Neue" "sans serif";
+    & h4{
+        margin-top: 20px;
+        font-size: 4vw;
+    }
+    & ul{
+        list-style: none;
+        & li{
+            margin: 20px;
+        }
+    }
+    & a{
+        text-decoration: none;
+        color: rgb(27, 27, 27);
+        font-family: "Bebas Neue";
+        font-size: 3vw;
+    }
+}
+//estilos del formulario 
+.form-contacto{
+    margin-top: 80px;
+    margin-bottom: 20px ;
+    & .label-contacto, button{
+        font-family: "Bebas Neue";
+        font-size: 1.5vw;
+    }
+    & input,textarea{
+        background-color: transparent;
+        border:none;
+    }
+    & button{
+        width: 50%;
+        background-color: #F299B1;
+        border-radius: 10px;
+        border: solid #f299b19c ;
+    }
+}
+@media (max-width:1000px) {
+    #main-contacto{
+        height: auto;
+    }
+    .form-contacto{
+        margin-top:20px;
+        margin-left:10px;
+    & .label-contacto,button{
+        font-size: 3vw;
+    }
+    }
+}

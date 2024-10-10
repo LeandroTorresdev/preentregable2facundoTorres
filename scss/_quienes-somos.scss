@@ -1,0 +1,41 @@
+// estilos de pagina nosotros 
+$rosa-mimadas:#F299B1;
+.nosotros-title{
+    font-family: "Bebas neue";
+    font-size: 6.5vw;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.nosotros-content{
+    font-family: "roboto";
+    font-size: 1.75vw;
+    margin-top:10px;
+}
+.card-title{
+    font-family: "Bebas neue";
+}
+.card-btn{
+    background-color:$rosa-mimadas;
+    font-family: "Bebas neue";
+    color: white;
+    font-size: 1.5vw;
+}
+
+@media (max-width:1000px){
+    .nosotros-content{
+        font-size: 3.5vw;
+    }
+    .card-btn{
+        font-size: 3vw;
+    }
+    .nosotros-title{
+        font-size: 10vw;
+    }
+    .ratio{
+        --bs-aspect-ratio: 90%;
+    }
+    .mimadas-teamwork{
+        margin-bottom: 10px;
+    }
+}

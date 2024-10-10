@@ -1,0 +1,42 @@
+//aca empiezan los estilos del footer
+$rosa-mimadas:#F299B1;
+.container-footer{
+    background-color:$rosa-mimadas ;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "logo direccion ." "instagram whatsapp facebook" ;
+}
+.iconos-footer{
+    color: white;
+    text-decoration: none;
+    font-family: "bebas neue";
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+.whatsapp{
+    grid-area:whatsapp;
+}
+.instagram{
+    grid-area:instagram;
+}
+.facebook{
+    grid-area:facebook;
+}
+.logo-footer{
+    width: 14vw;
+    height: 16vh;
+    grid-area:logo;
+}
+.direccion-footer{
+    grid-area:direccion;
+    margin-top: 3vw;
+    font-family: "bebas neue";
+}
+@media (max-width:1000px){
+    .logo-footer{
+    width:25vw ;
+    height: 10vh;
+    }
+
+}
