@@ -5,7 +5,13 @@
 @import "_quienes-somos";
 @import "_productos";
 @import "_contacto";
+@import "_servicios";
 $rosa-mimadas:#F299B1;
+@mixin titulos ($size , $separate) {
+    font-family: "bebas neue";
+    font-size: $size;
+    letter-spacing: $separate;
+}
 
 .row{
     margin-right: 0 !important;
