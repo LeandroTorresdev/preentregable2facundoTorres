@@ -1,6 +1,6 @@
 /* Estilos de la galeria de productos*/
 $rosa-mimadas:#F299B1;
-.btn-compra{
+@mixin botonRosa{
     background-color: #F299B1;
     width: 16vw;
     font-size:2vw ;
@@ -11,6 +11,9 @@ $rosa-mimadas:#F299B1;
     border: 0;
     border-radius: 3px;
     transition: all 1000ms;
+}
+.btn-compra{
+    @include botonRosa();
 }
 .btn-compra:hover{
     color: rgb(109, 8, 42);
